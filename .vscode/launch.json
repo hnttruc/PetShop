@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Server",
+            "program": "${workspaceFolder}/server.js"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:3004",
+            "webRoot": "${workspaceFolder}",
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "webpack:///./src/*": "${webRoot}/src/*"
+            }
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Full-stack",
+            "configurations": ["Launch Server", "Launch Chrome against localhost"]
+        }
+    ]
+}

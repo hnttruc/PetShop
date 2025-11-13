@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <title>PET SHOP - Pet Shop Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+<!-- Nạp jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Nạp Owl Carousel CSS -->
+
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Tải jQuery từ CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid border-bottom d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-4 text-center py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Địa Chỉ</h6>
+                        <span>38 Mậu Thân, An Hòa, Ninh Kiều, Cần Thơ, Việt Nam</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center border-start border-end py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Email</h6>
+                        <span>Soleilpet@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Số Điện Thoại</h6>
+                        <span>0398 874 718</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+   <!-- Navbar Start -->
+   <!-- Navbar Start -->
+   <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0 mb-5">
+    <a href="index.html" class="navbar-brand ms-lg-5">
+        <h1 class="m-0 text-uppercase text-dark"><i class="bi bi-shop fs-1 text-primary me-3"></i>Soleil Pet</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="navbar-nav ms-auto py-0">
+        <a href="index.html" class="nav-item nav-link">Trang chủ</a>
+        <a href="about.html" class="nav-item nav-link">Giới thiệu</a>
+        <a href="service.html" class="nav-item nav-link">Dịch vụ</a>
+        <a href="product.html" class="nav-item nav-link">Sản phẩm</a>
+        
+        <!-- Mục Giỏ hàng -->
+        <a href="basket.html" id="cartIcon" class="nav-item nav-link  active">
+            <i class="bi bi-cart"></i>
+            <span class="badge bg-primary text-white ms-1 basket-count">0</span>
+        </a>
+        
+        <!-- Dropdown Menu -->
+<li class="nav-item dropdown" id="adminMenu" style="display: none;">
+    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Quản lý</a>
+    <ul class="dropdown-menu m-0">
+        <li><a href="addProduct.html" class="dropdown-item">Chỉnh sửa sản phẩm</a></li>
+        <li><a href="viewOrders.html" class="dropdown-item">Xem đơn hàng</a></li>
+        <li><a href="manageUsers.html" class="dropdown-item">Quản lý người dùng</a></li>
+        <li><a href="statistics.html" class="dropdown-item">Thống kê</a></li>
+        <li><a href="settings.html" class="dropdown-item">Cài đặt</a></li>
+    </ul>
+</li>
+
+        <a href="./login.html" id="userLink" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">
+            Đăng nhập
+            <i class="bi bi-arrow-right"></i>
+        </a>
+        
+        <!-- Khu vực hiển thị avatar -->
+        <!-- Khu vực hiển thị avatar -->
+        <div id="userAvatar" style="display: none;">
+            <a href="#" id="avatarLink">
+                <img src="" alt="Avatar" id="avatarImage" class="rounded-circle" width="60" height="60">
+            </a>
+            <span id="userName"></span>
+            
+            <!-- Dropdown menu cho avatar -->
+            <!-- Dropdown menu cho avatar -->
+            <ul class="nav" id="avatarDropdownMenu" style="display: none;">
+                <li><a href="pf.html" class="dropdown-item">Chỉnh sửa thông tin</a></li>
+                <li><a href="od.html" class="dropdown-item">Xem đơn hàng</a></li>
+                <li><a href="#" id="logoutLink" class="dropdown-item">Đăng xuất</a></li> <!-- Đặt ID cho nút đăng xuất -->
+            </ul>
+
+        </div>
+        
+    </div>
+</div>
+</nav>
+<!-- Navbar End -->
+<div class="container mt-5">
+    <h2>Giỏ Hàng</h2>
+    <div id="basket-container" class="row">
+        <!-- Sản phẩm sẽ được hiển thị ở đây -->
+    </div>
+    <div class="mt-4">
+        <h4>Tổng Tiền: <span id="total-price">0 VND</span></h4>
+    </div>
+</div>
+
+
+<p id="empty-message"></p> <!-- Thông báo giỏ hàng trống -->
+<div class="checkout-section">
+    <div class="d-flex align-items-center">
+        <div class="form-check me-3">
+            <input type="checkbox" class="form-check-input" id="select-all">
+            <label class="form-check-label" for="select-all">Chọn tất cả</label>
+        </div>
+        <button id="checkout-btn" class="btn btn-success btn-block">Thanh toán</button>
+    </div>
+</div>
+
+
+
+
+
+
+<script src= "./js/basket.js"></script>
+<script src= "./js/main.js"></script>
+       
+
+</body>
+</html>
+<!-- Footer Start -->
+<div class="container-fluid bg-light mt-5 py-5">
+    <div class="container pt-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Liên hệ</h5>
+                <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>38 Mậu Thân, An Hòa, Ninh Kiều, Cần Thơ, Việt Nam</p>
+                <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>Soleilpet@gmail.com</p>
+                <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>0398 874 718</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Truy cập nhanh</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-body mb-2" href="D:\pet-shop-website-template-master\pet-shop-website-template-master\project\index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Trang chủ</a>
+                    <a class="text-body mb-2" href="D:\pet-shop-website-template-master\pet-shop-website-template-master\project\about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Giới thiệu</a>
+                    <a class="text-body mb-2" href="D:\pet-shop-website-template-master\pet-shop-website-template-master\project\service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Dịch vụ</a>
+                    
+                    <a class="text-body" href="D:\pet-shop-website-template-master\pet-shop-website-template-master\project\contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Liên hệ</a>
+                </div>
+            </div>
+               <!-- Footer Start 
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Popular Links</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                    <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                    <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                    <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                    <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                    <a class="text-body" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                </div>
+            </div>-->
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Đăng Ký</h5>
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control p-3" placeholder="Email">
+                        <button class="btn btn-primary">Đăng Ký</button>
+                    </div>
+                </form>
+                <h6 class="text-uppercase mt-4 mb-3">Theo Dõi Chúng Tôi</h6>
+                <div class="d-flex">
+                    <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-twitter"></i></a>
+                    <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-facebook"></i></a>
+                    <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-linkedin"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="col-12 text-center text-body">
+                <a class="text-body" href="">Terms & Conditions</a>
+                <span class="mx-1">|</span>
+                <a class="text-body" href="">Privacy Policy</a>
+                <span class="mx-1">|</span>
+                <a class="text-body" href="">Customer Support</a>
+                <span class="mx-1">|</span>
+                <a class="text-body" href="">Payments</a>
+                <span class="mx-1">|</span>
+                <a class="text-body" href="">Help</a>
+                <span class="mx-1">|</span>
+                <a class="text-body" href="">FAQs</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer End -->
+

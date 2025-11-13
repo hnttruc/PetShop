@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <title>PET SHOP - Pet Shop Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid border-bottom d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-4 text-center py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Địa Chỉ</h6>
+                        <span>38 Mậu Thân, An Hòa, Ninh Kiều, Cần Thơ, Việt Nam</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center border-start border-end py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Email</h6>
+                        <span>Soleilpet@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Số Điện Thoại</h6>
+                        <span>0398 874 718</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0 mb-5">
+        <a href="index.html" class="navbar-brand ms-lg-5">
+            <h1 class="m-0 text-uppercase text-dark"><i class="bi bi-shop fs-1 text-primary me-3"></i>Soleil Pet</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link">Trang chủ</a>
+            <a href="about.html" class="nav-item nav-link">Giới thiệu</a>
+            <a href="service.html" class="nav-item nav-link active">Dịch vụ</a>
+            <a href="product.html" class="nav-item nav-link">Sản phẩm</a>
+            
+            <!-- Mục Giỏ hàng -->
+            <a href="basket.html" id="cartIcon" class="nav-item nav-link">
+                <i class="bi bi-cart"></i>
+                <span class="badge bg-primary text-white ms-1 basket-count">0</span>
+            </a>
+            
+            <!-- Dropdown Menu -->
+           <!-- Dropdown Menu -->
+<li class="nav-item dropdown" id="adminMenu" style="display: none;">
+    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Quản lý</a>
+    <ul class="dropdown-menu m-0">
+        <li><a href="addProduct.html" class="dropdown-item">Chỉnh sửa sản phẩm</a></li>
+        <li><a href="viewOrders.html" class="dropdown-item">Xem đơn hàng</a></li>
+        <li><a href="manageUsers.html" class="dropdown-item">Quản lý người dùng</a></li>
+        <li><a href="statistics.html" class="dropdown-item">Thống kê</a></li>
+        <li><a href="settings.html" class="dropdown-item">Cài đặt</a></li>
+    </ul>
+</li>
+
+
+            <a href="./login.html" id="userLink" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">
+                Đăng nhập
+                <i class="bi bi-arrow-right"></i>
+            </a>
+            
+            <!-- Khu vực hiển thị avatar -->
+            <!-- Khu vực hiển thị avatar -->
+            <div id="userAvatar" style="display: none;">
+                <a href="#" id="avatarLink">
+                    <img src="" alt="Avatar" id="avatarImage" class="rounded-circle" width="60" height="60">
+                </a>
+                <span id="userName"></span>
+                
+                <!-- Dropdown menu cho avatar -->
+                <ul class="nav" id="avatarDropdownMenu" style="display: none;">
+                    <li><a href="pf.html" class="dropdown-item">Chỉnh sửa thông tin</a></li>
+                    <li><a href="od.html" class="dropdown-item">Xem đơn hàng</a></li>
+                    <li><a href="#" id="logoutLink" class="dropdown-item">Đăng xuất</a></li> 
+                </ul>
+            </div>
+
+            
+        </div>
+    </div>
+</nav>
+    <!-- Navbar End -->
+    
+ 
+
+    <!-- Services Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
+                <h6 class="text-primary text-uppercase">Services</h6>
+                <h1 class="display-5 text-uppercase mb-0">Dịch vụ chăm sóc thú cưng tuyệt vời của chúng tôi</h1>
+            </div>
+            <!-- Pet Boarding -->
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="flaticon-house display-1 text-primary me-4"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Boarding</h5>
+
+                            <p id="full-description" style="display: none;">
+                                Pet boarding là dịch vụ chăm sóc thú cưng tại các cơ sở chuyên nghiệp khi chủ nhân của chúng không có mặt. Dịch vụ này bao gồm chỗ ở, ăn uống, vận động, và chăm sóc y tế khi cần. Thú cưng của bạn sẽ được ở trong môi trường an toàn, sạch sẽ và được theo dõi bởi đội ngũ chuyên nghiệp...
+                            </p>
+                            <a class="text-primary text-uppercase" href="javascript:void(0)" id="read-more" onclick="toggleDescription()">Read More<i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <script>
+                function toggleDescription() {
+                var fullDescription = document.getElementById("full-description");
+                var readMoreLink = document.getElementById("read-more");
+
+                if (fullDescription.style.display === "none") {
+                    fullDescription.style.display = "block";
+                    readMoreLink.innerHTML = "Read Less<i class='bi bi-chevron-right'></i>";
+                } else {
+                    fullDescription.style.display = "none";
+                    readMoreLink.innerHTML = "Read More<i class='bi bi-chevron-right'></i>";
+                }
+                }
+                </script>
+                    <!-- Pet Feeding -->
+            
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="flaticon-food display-1 text-primary me-4"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Feeding</h5>
+                            <p id="full-description-feeding" style="display: none;">
+                                Dịch vụ Pet Feeding đảm bảo rằng thú cưng của bạn được cung cấp chế độ ăn uống cân bằng và đầy đủ dinh dưỡng trong suốt thời gian lưu trú. Chúng tôi sẽ tuân theo hướng dẫn của bạn về loại thức ăn, thời gian cho ăn và thói quen ăn uống của thú cưng, hoặc cung cấp các bữa ăn phù hợp với nhu cầu dinh dưỡng của chúng.
+                            </p>
+                            <a class="text-primary text-uppercase" href="javascript:void(0)" id="read-more-feeding" onclick="toggleFeedingDescription()">Read More<i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <script>
+                    function toggleFeedingDescription() {
+                    var fullDescription = document.getElementById("full-description-feeding");
+                    var readMoreLink = document.getElementById("read-more-feeding");
+
+                    if (fullDescription.style.display === "none") {
+                        fullDescription.style.display = "block";
+                        readMoreLink.innerHTML = "Read Less<i class='bi bi-chevron-right'></i>";
+                    } else {
+                        fullDescription.style.display = "none";
+                        readMoreLink.innerHTML = "Read More<i class='bi bi-chevron-right'></i>";
+                    }
+                }
+                    </script>
+                
+               <!-- Pet Grooming-->
+               <div class="col-md-6">
+                <div class="service-item bg-light d-flex p-4">
+                    <i class="flaticon-grooming display-1 text-primary me-4"></i>
+                    <div>
+                        <h5 class="text-uppercase mb-3">Pet Grooming</h5>
+                        <p id="full-description-grooming" style="display: none;">
+                            Pet Grooming (dịch vụ chăm sóc sắc đẹp cho thú cưng) bao gồm các dịch vụ như tắm, cắt tỉa lông, vệ sinh tai, cắt móng, và kiểm tra da. Điều này giúp thú cưng của bạn không chỉ luôn sạch sẽ, mà còn khỏe mạnh, ngăn ngừa các bệnh về da và nhiễm trùng.
+                        </p>
+                        <a class="text-primary text-uppercase" href="javascript:void(0)" id="read-more-grooming">Read More<i class="bi bi-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    function toggleGroomingDescription() {
+                        var fullDescription = document.getElementById("full-description-grooming");
+                        var readMoreLink = document.getElementById("read-more-grooming");
+            
+                        if (fullDescription.style.display === "none") {
+                            fullDescription.style.display = "block";
+                            readMoreLink.innerHTML = "Read Less<i class='bi bi-chevron-right'></i>";
+                        } else {
+                            fullDescription.style.display = "none";
+                            readMoreLink.innerHTML = "Read More<i class='bi bi-chevron-right'></i>";
+                        }
+                    }
+            
+                    document.getElementById("read-more-grooming").addEventListener('click', toggleGroomingDescription);
+                });
+            </script>
+        
+                <!-- Pet Training-->
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="flaticon-cat display-1 text-primary me-4"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Training</h5>
+                
+                            <p id="full-description-training" style="display: none;">
+                                Pet Training (dịch vụ huấn luyện thú cưng) tập trung vào việc rèn luyện hành vi và kỹ năng cơ bản như đi vệ sinh đúng chỗ, tuân thủ mệnh lệnh, và các kỹ năng xã hội. Điều này giúp thú cưng của bạn trở nên ngoan ngoãn, biết vâng lời và dễ dàng hòa nhập vào môi trường sống.
+                            </p>
+                            <a class="text-primary text-uppercase" href="javascript:void(0)" id="read-more-training" onclick="toggleTrainingDescription()">Read More<i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <script>       
+                function toggleTrainingDescription() {
+                    var fullDescription = document.getElementById("full-description-training");
+                    var readMoreLink = document.getElementById("read-more-training");
+                
+                    if (fullDescription.style.display === "none") {
+                        fullDescription.style.display = "block";
+                        readMoreLink.innerHTML = "Read Less<i class='bi bi-chevron-right'></i>";
+                    } else {
+                        fullDescription.style.display = "none";
+                        readMoreLink.innerHTML = "Read More<i class='bi bi-chevron-right'></i>";
+                    }
+                }
+                </script>
+                
+                <!-- Pet Exercise-->
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="flaticon-dog display-1 text-primary me-4"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Exercise</h5>
+                            <p id="full-description-exercise" style="display: none;">
+                                Pet Exercise (dịch vụ vận động cho thú cưng) bao gồm các hoạt động thể dục như đi dạo, chơi đùa và rèn luyện thể lực nhằm giữ cho thú cưng của bạn khỏe mạnh, giảm căng thẳng và nâng cao tinh thần. Điều này giúp thú cưng phát triển cơ bắp và hỗ trợ duy trì trọng lượng cơ thể hợp lý.
+                            </p>
+                            <a class="text-primary text-uppercase" href="javascript:void(0)" id="read-more-exercise" onclick="toggleExerciseDescription()">Read More<i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                function toggleExerciseDescription() {
+                    var fullDescription = document.getElementById("full-description-exercise");
+                    var readMoreLink = document.getElementById("read-more-exercise");
+
+                    if (fullDescription.style.display === "none") {
+                        fullDescription.style.display = "block";
+                        readMoreLink.innerHTML = "Read Less<i class='bi bi-chevron-right'></i>";
+                    } else {
+                        fullDescription.style.display = "none";
+                        readMoreLink.innerHTML = "Read More<i class='bi bi-chevron-right'></i>";
+                    }
+                }
+                </script>
+                    <!-- Pet Treatment -->
+                    <div class="col-md-6">
+                        <div class="service-item bg-light d-flex p-4">
+                            <i class="flaticon-vaccine display-1 text-primary me-4"></i>
+                            <div>
+                                <h5 class="text-uppercase mb-3">Pet Treatment</h5>                                                          
+                                <p id="full-description-treatment" style="display: none;">
+                                    Pet Treatment (dịch vụ điều trị cho thú cưng) bao gồm các dịch vụ y tế như tiêm phòng, kiểm tra sức khỏe định kỳ và điều trị bệnh. Dịch vụ này giúp bảo vệ sức khỏe cho thú cưng và ngăn ngừa các bệnh tiềm ẩn, đảm bảo chúng luôn khỏe mạnh và an toàn.
+                                </p>
+                                <a class="text-primary text-uppercase" href="javascript:void(0)" id="read-more-treatment" onclick="toggleTreatmentDescription()">Read More<i class="bi bi-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                    function toggleTreatmentDescription() {
+                        var fullDescription = document.getElementById("full-description-treatment");
+                        var readMoreLink = document.getElementById("read-more-treatment");
+
+                        if (fullDescription.style.display === "none") {
+                            fullDescription.style.display = "block";
+                            readMoreLink.innerHTML = "Read Less<i class='bi bi-chevron-right'></i>";
+                        } else {
+                            fullDescription.style.display = "none";
+                            readMoreLink.innerHTML = "Read More<i class='bi bi-chevron-right'></i>";
+                        }
+                    }
+
+                    </script>
+    <!-- Services End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid bg-testimonial py-5" style="margin: 45px 0;">
+        <div class="container py-5">
+            <div class="row justify-content-end">
+                <div class="col-lg-7">
+                    <div class="owl-carousel testimonial-carousel bg-white p-5">
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-4">
+                                <img class="img-fluid mx-auto" src="img/testimonial-1.jpg" alt="">
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
+                                    <i class="bi bi-chat-square-quote text-primary"></i>
+                                </div>
+                            </div>
+                            <p>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat. Erat dolor rebum sit ipsum.</p>
+                            <hr class="w-25 mx-auto">
+                            <h5 class="text-uppercase">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-4">
+                                <img class="img-fluid mx-auto" src="img/testimonial-2.jpg" alt="">
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
+                                    <i class="bi bi-chat-square-quote text-primary"></i>
+                                </div>
+                            </div>
+                            <p>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat. Erat dolor rebum sit ipsum.</p>
+                            <hr class="w-25 mx-auto">
+                            <h5 class="text-uppercase">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Pricing Plan Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
+                <h6 class="text-primary text-uppercase">Pricing Plan</h6>
+                <h1 class="display-5 text-uppercase mb-0">Competitive Pricing For Pet Services</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="bg-light text-center pt-5 mt-lg-5">
+                        <h2 class="text-uppercase">Basic</h2>
+                        <h6 class="text-body mb-5">The Best Choice</h6>
+                        <div class="text-center bg-primary p-4 mb-2">
+                            <h1 class="display-4 text-white mb-0">
+                                <small class="align-top"
+                                    style="font-size: 22px; line-height: 45px;">$</small>49<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                    Mo</small>
+                            </h1>
+                        </div>
+                        <div class="text-center p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>HTML5 & CSS3</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Bootstrap v5</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Responsive Layout</span>
+                                <i class="bi bi-x fs-4 text-danger"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Browsers Compatibility</span>
+                                <i class="bi bi-x fs-4 text-danger"></i>
+                            </div>
+                            <a href="" class="btn btn-primary text-uppercase py-2 px-4 my-3">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light text-center pt-5">
+                        <h2 class="text-uppercase">Standard</h2>
+                        <h6 class="text-body mb-5">The Best Choice</h6>
+                        <div class="text-center bg-dark p-4 mb-2">
+                            <h1 class="display-4 text-white mb-0">
+                                <small class="align-top"
+                                    style="font-size: 22px; line-height: 45px;">$</small>99<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                    Mo</small>
+                            </h1>
+                        </div>
+                        <div class="text-center p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>HTML5 & CSS3</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Bootstrap v5</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Responsive Layout</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Browsers Compatibility</span>
+                                <i class="bi bi-x fs-4 text-danger"></i>
+                            </div>
+                            <a href="" class="btn btn-primary text-uppercase py-2 px-4 my-3">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light text-center pt-5 mt-lg-5">
+                        <h2 class="text-uppercase">Extended</h2>
+                        <h6 class="text-body mb-5">The Best Choice</h6>
+                        <div class="text-center bg-primary p-4 mb-2">
+                            <h1 class="display-4 text-white mb-0">
+                                <small class="align-top"
+                                    style="font-size: 22px; line-height: 45px;">$</small>149<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                    Mo</small>
+                            </h1>
+                        </div>
+                        <div class="text-center p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>HTML5 & CSS3</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Bootstrap v5</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Responsive Layout</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Browsers Compatibility</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <a href="" class="btn btn-primary text-uppercase py-2 px-4 my-3">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing Plan End -->
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light mt-5 py-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Liên hệ</h5>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>38 Mậu Thân, An Hòa, Ninh Kiều, Cần Thơ, Việt Nam</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>Soleilpet@gmail.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>0398 874 718</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Truy cập nhanh</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-body mb-2" href="D:\pet-shop-website-template-master\pet-shop-website-template-master\project\index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Trang chủ</a>
+                        <a class="text-body mb-2" href="D:\pet-shop-website-template-master\pet-shop-website-template-master\project\about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Giới thiệu</a>
+                        <a class="text-body mb-2" href="D:\pet-shop-website-template-master\pet-shop-website-template-master\project\service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Dịch vụ</a>
+                        
+                        <a class="text-body" href="D:\pet-shop-website-template-master\pet-shop-website-template-master\project\contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Liên hệ</a>
+                    </div>
+                </div>
+                   <!-- Footer Start 
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Popular Links</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                        <a class="text-body" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    </div>
+                </div>-->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Đăng Ký</h5>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control p-3" placeholder="Email">
+                            <button class="btn btn-primary">Đăng Ký</button>
+                        </div>
+                    </form>
+                    <h6 class="text-uppercase mt-4 mb-3">Theo Dõi Chúng Tôi</h6>
+                    <div class="d-flex">
+                        <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-twitter"></i></a>
+                        <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-facebook"></i></a>
+                        <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-linkedin"></i></a>
+                        <a class="btn btn-outline-primary btn-square" href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-12 text-center text-body">
+                    <a class="text-body" href="">Terms & Conditions</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Privacy Policy</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Customer Support</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Payments</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Help</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">FAQs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+    
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

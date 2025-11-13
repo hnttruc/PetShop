@@ -1,0 +1,1851 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <title>PET SHOP - Pet Shop Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+
+</head>
+
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid border-bottom d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-4 text-center py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Địa Chỉ</h6>
+                        <span>38 Mậu Thân, An Hòa, Ninh Kiều, Cần Thơ, Việt Nam</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center border-start border-end py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Email</h6>
+                        <span>Soleilpet@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Số Điện Thoại</h6>
+                        <span>0398 874 718</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0 mb-5">
+    <a href="index.html" class="navbar-brand ms-lg-5">
+        <h1 class="m-0 text-uppercase text-dark"><i class="bi bi-shop fs-1 text-primary me-3"></i>Soleil Pet</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link active">Trang chủ</a>
+            <a href="about.html" class="nav-item nav-link">Giới thiệu</a>
+            <a href="service.html" class="nav-item nav-link">Dịch vụ</a>
+            <a href="product.html" class="nav-item nav-link">Sản phẩm</a>
+            
+            <!-- Mục Giỏ hàng -->
+            <a href="basket.html" id="cartIcon" class="nav-item nav-link">
+                <i class="bi bi-cart"></i>
+                <span class="badge bg-primary text-white ms-1 basket-count">0</span>
+            </a>
+
+            <!-- Dropdown Menu -->
+            <li class="nav-item dropdown" id="adminMenu" style="display: none;">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Quản lý</a>
+                <ul class="dropdown-menu m-0">
+                    <li><a href="addProduct.html" class="dropdown-item">Chỉnh sửa sản phẩm</a></li>
+                    <li><a href="viewOrders.html" class="dropdown-item">Xem đơn hàng</a></li>
+                    <li><a href="manageUsers.html" class="dropdown-item">Quản lý người dùng</a></li>
+                    <li><a href="statistics.html" class="dropdown-item">Thống kê</a></li>
+                    <li><a href="settings.html" class="dropdown-item">Cài đặt</a></li>
+                </ul>
+            </li>
+
+            <a href="./login.html" id="userLink" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">
+                Đăng nhập
+                <i class="bi bi-arrow-right"></i>
+            </a>
+
+            <!-- Khu vực hiển thị avatar -->
+            <div id="userAvatar" style="display: none;">
+                <a href="#" id="avatarLink">
+                    <img src="" alt="Avatar" id="avatarImage" class="rounded-circle" width="60" height="60">
+                </a>
+                <span id="userName"></span>
+
+                <!-- Dropdown menu cho avatar -->
+                <ul class="nav" id="avatarDropdownMenu" style="display: none;">
+                    <li><a href="pf.html" class="dropdown-item">Chỉnh sửa thông tin</a></li>
+                    <li><a href="od.html" id="viewOrdersLink" class="dropdown-item">Xem đơn hàng</a></li>
+                    <li><a href="#" id="logoutLink" class="dropdown-item">Đăng xuất</a></li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+
+
+        
+<!-- Navbar End -->
+
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+        <div class="container py-5">
+            <div class="row justify-content-start">
+                <div class="col-lg-8 text-center text-lg-start">
+                    <h1 class="display-1 text-uppercase text-dark mb-lg-4">SOLEIL</h1>
+                    <h1 class="text-uppercase text-black mb-lg-4">Làm cho thú cưng của bạn hạnh phúc</h1>
+                    <p class="fs-4 text-black mb-lg-4" style="color: black;">Chăm sóc tận tình, yêu thương không giới hạn – Nơi những người bạn nhỏ tìm thấy ngôi nhà yêu thương!</p>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">                        
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="D:\pet-shop-website-template-master\pet-shop-website-template-master\project\img\3042473-uhd_3840_2160_30fps.mp4" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="font-weight-normal text-white m-0 ms-4 d-none d-sm-block">Phát</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="./img/3042473-uhd_3840_2160_30fps.mp4" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded" src="img/about.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="border-start border-5 border-primary ps-5 mb-5">
+                        <h6 class="text-primary text-uppercase">Giới thiệu</h6>
+                        <h1 class="display-5 text-uppercase mb-0">Chúng tôi sẽ giữ cho thú cưng của bạn luôn hạnh phúc</h1>
+                    </div>
+                    <h4 class="text-body mb-4">Chúng tôi cam kết cung cấp thức ăn chất lượng cao, các phụ kiện an toàn và những dịch vụ chăm sóc chuyên nghiệp để đảm bảo sức khỏe và hạnh phúc cho thú cưng của bạn.</h4>
+                    <div class="bg-light p-4">
+                        <ul class="nav nav-pills justify-content-between mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item w-50" role="presentation">
+                                <button class="nav-link text-uppercase w-100 active" id="pills-1-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1"
+                                    aria-selected="true">Sứ mệnh</button>
+                            </li>
+                            <li class="nav-item w-50" role="presentation">
+                                <button class="nav-link text-uppercase w-100" id="pills-2-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2"
+                                    aria-selected="false">Tầm nhìn</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+                                <p class="mb-0">Chúng tôi cam kết mang đến sự chăm sóc tốt nhất cho các thú cưng, tạo ra một môi trường yêu thương và an toàn cho chúng. Sứ mệnh của chúng tôi là cung cấp các sản phẩm và dịch vụ chất lượng, hỗ trợ chủ nuôi trong việc nuôi dưỡng và bảo vệ sức khỏe cho thú cưng, đồng thời thúc đẩy tình yêu thương và trách nhiệm của xã hội đối với các loài động vật.</p>
+                            </div>
+                            <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+                                <p class="mb-0">Nơi mà sự hạnh phúc và sức khỏe của thú cưng luôn được đặt lên hàng đầu. Chúng tôi mong muốn xây dựng một cộng đồng yêu thương động vật, mỗi thú cưng đều sẽ được chăm sóc và nuôi dưỡng một cách tận tâm, chuyên nghiệp. Chúng tôi hướng tới việc lan tỏa kiến thức về việc nuôi dưỡng, đồng thời phát triển các dịch vụ và sản phẩm vượt trội để đáp ứng nhu cầu của thú cưng và chủ nuôi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    
+    
+    <!-- Services Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
+                <h6 class="text-primary text-uppercase">Dịch vụ</h6>
+                <h1 class="display-5 text-uppercase mb-0">Dịch vụ chăm sóc thú cưng tuyệt vời của chúng tôi</h1>
+            </div>
+            
+            <!-- Pet Boarding -->
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="flaticon-house display-1 text-primary me-4"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Boarding</h5>
+                            <p id="full-description" style="display: none;">
+                                Pet boarding là dịch vụ chăm sóc thú cưng tại các cơ sở chuyên nghiệp khi chủ nhân của chúng không có mặt. Dịch vụ này bao gồm chỗ ở, ăn uống, vận động, và chăm sóc y tế khi cần. Thú cưng của bạn sẽ được ở trong môi trường an toàn, sạch sẽ và được theo dõi bởi đội ngũ chuyên nghiệp...
+                            </p>
+                            <a class="text-primary text-uppercase" href="javascript:void(0)" id="read-more" onclick="toggleDescription()">Read More<i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Pet Feeding -->
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="flaticon-food display-1 text-primary me-4"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Feeding</h5>
+                            <p id="full-description-feeding" style="display: none;">
+                                Dịch vụ Pet Feeding đảm bảo rằng thú cưng của bạn được cung cấp chế độ ăn uống cân bằng và đầy đủ dinh dưỡng trong suốt thời gian lưu trú. Chúng tôi sẽ tuân theo hướng dẫn của bạn về loại thức ăn, thời gian cho ăn và thói quen ăn uống của thú cưng, hoặc cung cấp các bữa ăn phù hợp với nhu cầu dinh dưỡng của chúng.
+                            </p>
+                            <a class="text-primary text-uppercase" href="javascript:void(0)" id="read-more-feeding" onclick="toggleFeedingDescription()">Read More<i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Pet Grooming -->
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="flaticon-grooming display-1 text-primary me-4"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Grooming</h5>
+                            <p id="full-description-grooming" style="display: none;">
+                                Pet Grooming (dịch vụ chăm sóc sắc đẹp cho thú cưng) bao gồm các dịch vụ như tắm, cắt tỉa lông, vệ sinh tai, cắt móng, và kiểm tra da. Điều này giúp thú cưng của bạn không chỉ luôn sạch sẽ, mà còn khỏe mạnh, ngăn ngừa các bệnh về da và nhiễm trùng.
+                            </p>
+                            <a class="text-primary text-uppercase" href="javascript:void(0)" id="read-more-grooming" onclick="toggleGroomingDescription()">Read More<i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Pet Training -->
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="flaticon-cat display-1 text-primary me-4"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Training</h5>
+                            <p id="full-description-training" style="display: none;">
+                                Pet Training (dịch vụ huấn luyện thú cưng) tập trung vào việc rèn luyện hành vi và kỹ năng cơ bản như đi vệ sinh đúng chỗ, tuân thủ mệnh lệnh, và các kỹ năng xã hội. Điều này giúp thú cưng của bạn trở nên ngoan ngoãn, biết vâng lời và dễ dàng hòa nhập vào môi trường sống.
+                            </p>
+                            <a class="text-primary text-uppercase" href="javascript:void(0)" id="read-more-training" onclick="toggleTrainingDescription()">Read More<i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Pet Exercise -->
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="flaticon-dog display-1 text-primary me-4"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Exercise</h5>
+                            <p id="full-description-exercise" style="display: none;">
+                                Pet Exercise (dịch vụ vận động cho thú cưng) bao gồm các hoạt động thể dục như đi dạo, chơi đùa và rèn luyện thể lực nhằm giữ cho thú cưng của bạn khỏe mạnh, giảm căng thẳng và nâng cao tinh thần. Điều này giúp thú cưng phát triển cơ bắp và hỗ trợ duy trì trọng lượng cơ thể hợp lý.
+                            </p>
+                            <a class="text-primary text-uppercase" href="javascript:void(0)" id="read-more-exercise" onclick="toggleExerciseDescription()">Read More<i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Pet Treatment -->
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="flaticon-vaccine display-1 text-primary me-4"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Treatment</h5>
+                            <p id="full-description-treatment" style="display: none;">
+                                Pet Treatment (dịch vụ điều trị cho thú cưng) bao gồm các dịch vụ y tế như tiêm phòng, kiểm tra sức khỏe định kỳ và điều trị bệnh. Dịch vụ này giúp bảo vệ sức khỏe cho thú cưng và ngăn ngừa các bệnh tiềm ẩn, đảm bảo chúng luôn khỏe mạnh và an toàn.
+                            </p>
+                            <a class="text-primary text-uppercase" href="javascript:void(0)" id="read-more-treatment" onclick="toggleTreatmentDescription()">Read More<i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+    
+  
+<!-- Products Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
+            <h6 class="text-primary text-uppercase">Sản phẩm</h6>
+            <h1 class="display-5 text-uppercase mb-0">Những sản phẩm tốt nhất dành cho thú cưng của bạn</h1>
+        </div>
+        
+        <!-- Product Categories as Buttons -->
+<div class="product-categories mb-4">
+    <h5 class="text-uppercase">Phân loại sản phẩm</h5>
+    <div class="btn-group">
+        <button class="btn btn-primary" onclick="filterProducts('all')">Tất cả</button> 
+        <button class="btn btn-primary" onclick="filterProducts('dog')">Thức ăn cho chó</button>
+        <button class="btn btn-primary" onclick="filterProducts('cat')">Thức ăn cho mèo</button>
+        <button class="btn btn-primary" onclick="filterProducts('accessory')">Phụ kiện cho thú cưng</button>
+        <button class="btn btn-primary" onclick="filterProducts('health')">Chăm sóc sức khỏe</button>
+    </div>
+</div>
+
+        <!-- Dog Food -->
+         <!-- Product Carousel -->
+         <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">          
+                <!-- Sản phẩm dành cho chó -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4 pb-5 product-item dog">
+                            <div class="position-relative bg-light d-flex flex-column text-center">
+                                <img class="img-fluid mb-4" src="img/product1.jpg" alt="PURINA PRO PLAN Small & Mini Adult">
+                                <h6 class="text-uppercase">PURINA PRO PLAN Small & Mini Adult</h6>
+                                <h5 class="text-primary">115.000 VND</h5>
+                                <div class="btn-action d-flex justify-content-center">
+                                    <a class="btn btn-primary py-2 px-3" href="D:\pet-shop-website-template-master\pet-shop-website-template-master\project\basket.html"><i class="bi bi-cart"></i></a>
+                                    <a class="btn btn-primary py-2 px-3" href="#" data-bs-toggle="modal" data-bs-target="#productModal1">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Modal for product details -->
+                    <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="productModalLabel1">Thông tin sản phẩm</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                            
+                                <div class="modal-body">                                        
+                                    <!-- Nhiều hình ảnh sản phẩm dạng lưới -->
+                                    <div class="product-images-grid mb-4">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="img/product1.jpg" class="img-fluid mb-3" alt="Hình 1">
+                                            </div> 
+                                            <div class="col-4">
+                                                <img src="img/product1-1.jpg" class="img-fluid mb-3" alt="Hình 2">
+                                            </div>
+                                            <div class="col-4">
+                                                <img src="img/product1-2.jpg" class="img-fluid mb-3" alt="Hình 3">
+                                            </div>                                            
+                                        </div>
+                                    </div>
+
+                                    <!-- Mô tả sản phẩm -->
+                                    <div class="product-description" style="padding-left: 20px;">
+                                        
+                                        <h5 class="text-primary">PURINA PRO PLAN Small & Mini Puppy</h5>
+                                        <h5 class="text-primary">135.000 VND</h5>
+                                        <h6 class="text-secondary">Mã sản phẩm: D01</h6>                                   
+                                    </div>
+                                    <ul style="padding-left: 40px;">
+                                        <p>Thức ăn cho chó trưởng thành PURINA PRO PLAN Small & Mini Adult (Dry Dog Food) vị thịt gà nguyên chất dành cho các giống chó nhỏ – mini có trọng lượng khi trưởng thành dưới 10kg. Sản phẩm sử dụng cho chó lớn trưởng thành trên 12 tháng tuổi.</p>                                       
+                                        <ul>
+                                            <li>Thức ăn được phát triển để cung cấp tất cả các dưỡng chất cần thiết cho chó trưởng thành.</li>
+                                            <li>Giúp cải thiện tình trạng lông và da, mang lại vẻ đẹp khỏe mạnh cho thú cưng.</li>
+                                            <li>Công thức hỗ trợ hệ tiêu hóa và sức đề kháng của chó.</li>
+                                            <li>Hạt thức ăn nhỏ, dễ nhai và tiêu hóa cho chó nhỏ.</li>
+                                            <li>Thành phần tự nhiên, không chứa chất bảo quản độc hại.</li>
+                                        </ul>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                    <a href="D:\pet-shop-website-template-master\pet-shop-website-template-master\project\basket.html" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                        <!-- Product Item 2 -->
+                        <div class="col-md-4 pb-5 product-item dog">
+                            <div class="position-relative bg-light d-flex flex-column text-center">
+                                <img class="img-fluid mb-4" src="img/product2.jpg" alt="MKB All Life Stages Formula Nutrition">
+                                <h6 class="text-uppercase">MKB All Life Stages Formula Nutrition</h6>
+                                <h5 class="text-primary">315.000 VND</h5>
+                                <div class="btn-action d-flex justify-content-center">
+                                    <a class="btn btn-primary py-2 px-3" href="#"><i class="bi bi-cart"></i></a>
+                                    <a class="btn btn-primary py-2 px-3" href="#" data-bs-toggle="modal" data-bs-target="#productModal2">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal for product details -->
+                    <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel2" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="productModalLabel2">Thông tin sản phẩm</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                            
+                                <div class="modal-body">                                        
+                                    <!-- Nhiều hình ảnh sản phẩm dạng lưới -->
+                                    <div class="product-images-grid mb-4">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="img/product2.jpg" class="img-fluid mb-3" alt="Hình 1">
+                                            </div> 
+                                                                                       
+                                        </div>
+                                    </div>
+
+                                    <!-- Mô tả sản phẩm -->
+                                    <div class="product-description" style="padding-left: 20px;">
+                                        
+                                        <h5 class="text-primary">MKB All Life Stages Formula Nutrition</h5>
+                                        <h5 class="text-primary">315.000 VND</h5>
+                                        <h6 class="text-secondary">Mã sản phẩm: D02</h6> 
+                                                                            
+                                    </div>
+                                    <ul style="padding-left: 40px;">
+                                        <p>Thức ăn cho chó Poodle MKB All Life Stages Formula Nutrition, dành riêng cho chó Poodle, bao gồm tất cả các giai đoạn phát triển.</p>
+                                        <ul>
+                                            <li>Cung cấp nguồn dinh dưỡng theo đúng tiêu chuẩn cho giống Poodle.</li>
+                                            <li>Hạn chế và ngăn ngừa sự chảy nước mắt gây vàng ố lông ở khóe mắt.</li>
+                                            <li>Poodle cần công thức dinh dưỡng độc quyền</li>
+                                            <li>Công thức chế biến ít muối và ít chất béo, hàm lượng muối được điều chỉnh khoa học.</li>
+                                            <li>Ngăn ngừa mảng bám răng hiệu quả với hàm lượng Canxi được điều chỉnh khoa học.</li>
+                                            <li>Chăm sóc và nuôi dưỡng bộ lông cho chó Poodle mềm mượt, sáng bóng và không xơ rối</li>
+                                            <li>Thúc đẩy tiêu hóa an toàn, thích hợp cho cả chó con.</li>
+                                            <li>Khử mùi phân tối đa.</li>
+                                        </ul>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                    <button class="btn btn-primary add-to-basket-btn" data-product-id="D02" data-product-name="MKB All Life Stages Formula Nutrition" data-product-price="315000">Thêm vào giỏ hàng</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                        <!-- Product Item 3 -->
+                        <div class="col-md-4 pb-5 product-item dog">
+                            <div class="position-relative bg-light d-flex flex-column text-center">
+                                <img class="img-fluid mb-4" src="img/product3.jpg" alt="JERHIGH Meat as Meals Chicken Recipe">
+                                <h6 class="text-uppercase">JERHIGH Meat as Meals Chicken Recipe</h6>
+                                <h5 class="text-primary">275.000 VND</h5>
+                                <div class="btn-action d-flex justify-content-center">
+                                    <a class="btn btn-primary py-2 px-3" href="#"><i class="bi bi-cart"></i></a>
+                                    <a class="btn btn-primary py-2 px-3" href="#" data-bs-toggle="modal" data-bs-target="#productModal3">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>                    
+                        <!-- Modal for product details -->
+                     <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModalLabel3" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="productModalLabel3">Thông tin sản phẩm</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                            
+                                <div class="modal-body">                                        
+                                    <!-- Nhiều hình ảnh sản phẩm dạng lưới -->
+                                    <div class="product-images-grid mb-4">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="img/product3.jpg" class="img-fluid mb-3" alt="Hình 1">
+                                            </div>                                                                                        
+                                        </div>
+                                    </div>
+
+                                    <!-- Mô tả sản phẩm -->
+                                    <div class="product-description" style="padding-left: 20px;">
+                                        
+                                        <h5 class="text-primary">JERHIGH Meat as Meals Beef Recipe</h5>
+                                        <h5 class="text-primary">275.000 VND</h5>
+                                        <h6 class="text-secondary">Mã sản phẩm: D03</h6> 
+                                                                            
+                                    </div>
+                                    <ul style="padding-left: 40px;">
+                                        <p>Thức ăn hạt mềm cho chó vị thịt bò JERHIGH Meat as Meals Beef Recipe dành cho tất cả các giống chó từ bé đến trưởng thành.</p>
+
+                                        <ul>
+                                            <li>JERHIGH Meat As Meals Beef Recipe mang lại cho thú cưng sự hưng phấn và ăn ngon hơn mỗi ngày. Các thành phần nguyên liệu được sản xuất dựa trên công thức đặc biệt. Giúp cân bằng dinh dưỡng cho vật nuôi. Bổ sung protein chất lượng cao duy trì năng lượng mỗi ngày. Omega 3 và 6 trong cá và các loại thảo mộc giúp bổ sung chất dinh dưỡng cho da và lông.</li>
+                                            <li>Sản phẩm bao gồm dưỡng chất Glucosamine và Chondroitin được chiết xuất từ sụn cá biển giúp bảo vệ các khớp và xương chắc khỏe. Chất xơ Inulin là một chất lợi khuẩn khuẩn tự nhiên được chiết xuất từ rễ rau diếp xoăn giúp tăng cường hệ tiêu hóa. Khoáng chất Limonite được tìm thấy ở phía Nam Nhật Bản giúp giảm bớt mùi hôi trong phân và nước tiểu. Chất Beta Glucan chiết xuất từ men vi sinh giúp tăng cường hệ miễn dịch.</li>
+                                            <li>Thức ăn cho chó JERHIGH Meat As Meals Beef Recipe được bảo quản sản phẩm ở nhiệt độ thường, tránh những nơi có độ ẩm cao. Bạn có thể xây dựng khẩu phần ăn của cún cưng dựa trên những thông số về tuổi tác và cân nặng. Để mang lại hiệu quả tốt nhất hãy cung cấp đầy đủ nước uống cho thú cưng sau mỗi bữa ăn.</li>
+                                        </ul>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                    <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>         
+                </div> 
+                </div>
+                           
+                        <!-- Sản phẩm 4 -->
+                        <div class="carousel-item">
+                            <div class="row">                               
+                                <div class="col-md-4 pb-5 product-item dog">
+                                    <div class="position-relative bg-light d-flex flex-column text-center">
+                                        <img class="img-fluid mb-4" src="img/product4.jpg" alt="PURINA PRO PLAN Small & Mini Puppy">
+                                        <h6 class="text-uppercase">PURINA PRO PLAN Small & Mini Puppy</h6>
+                                        <h5 class="text-primary">135.000 VND</h5>
+                                        <div class="btn-action d-flex justify-content-center">
+                                            <a class="btn btn-primary py-2 px-3" href="#"><i class="bi bi-cart"></i></a>
+                                            <a class="btn btn-primary py-2 px-3" href="#" data-bs-toggle="modal" data-bs-target="#productModal4">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                       <!-- Modal for product details -->
+                                <div class="modal fade" id="productModal4" tabindex="-1" aria-labelledby="productModalLabel4" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="productModalLabel4">Thông tin sản phẩm</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        
+                                            <div class="modal-body">                                        
+                                                <!-- Nhiều hình ảnh sản phẩm dạng lưới -->
+                                                <div class="product-images-grid mb-4">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="img/product4.jpg" class="img-fluid mb-3" alt="Hình 1">
+                                                        </div> 
+                                                        <div class="col-4">
+                                                            <img src="img/product4-1.jpg" class="img-fluid mb-3" alt="Hình 2">
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <img src="img/product4-2.jpg" class="img-fluid mb-3" alt="Hình 3">
+                                                        </div>                                            
+                                                    </div>
+                                                </div>
+
+                                                <!-- Mô tả sản phẩm -->
+                                                <div class="product-description" style="padding-left: 20px;">
+                                                    
+                                                    <h5 class="text-primary">PURINA PRO PLAN Small & Mini Puppy</h5>
+                                                    <h5 class="text-primary">135.000 VND</h5>
+                                                    <h6 class="text-secondary">Mã sản phẩm: D04</h6> 
+                                                                                        
+                                                </div>
+                                                <ul style="padding-left: 40px;">
+                                                    <p>Thức ăn cho chó con PURINA PRO PLAN Small & Mini Puppy (Dry Dog Food) vị thịt gà nguyên chất giúp cân bằng và hoàn chỉnh cho các giống chó nhỏ – mini có trọng lượng khi trưởng thành dưới 10kg. Sản phẩm sử dụng cho chó con dưới 12 tháng tuổi.</p>                                        
+                                                    <ul>
+                                                        <li>Thức ăn cho chó con PURINA PRO PLAN Small & Mini Puppy là sản phẩm thức ăn hạt cho chó từ Nestlé giúp bổ sung sữa non (Colostrum), tăng cường miễn dịch, bảo vệ hệ tiêu hóa.</li>
+                                                        <li>Với thành phần nhiều nhất trong sản phẩm là thịt gà thật. Cùng với DHA từ Omega giúp nuôi dưỡng não bộ và cho mắt sáng, khỏe.</li>
+                                                        <li>Prebiotics giúp cân bằng hệ vi sinh đường ruột, bảo vệ hệ tiêu hóa chó con. Công thức dinh dưỡng cao cho sự phát triển tối ưu của chó con vóc nhỏ & mini.</li>
+                                                    </ul>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                                <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sản phẩm 5 -->
+                                <div class="col-md-4 pb-5 product-item dog">
+                                    <div class="position-relative bg-light d-flex flex-column text-center">
+                                        <img class="img-fluid mb-4" src="img/product5.jpg" alt="ROYAL CANIN Poodle Adult">
+                                        <h6 class="text-uppercase">ROYAL CANIN Poodle Adult</h6>
+                                        <h5 class="text-primary">200.000 VND</h5>
+                                        <div class="btn-action d-flex justify-content-center">
+                                            <a class="btn btn-primary py-2 px-3" href="#"><i class="bi bi-cart"></i></a>
+                                            <a class="btn btn-primary py-2 px-3" href="#" data-bs-toggle="modal" data-bs-target="#productModal5">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal for product details -->
+                     <div class="modal fade" id="productModal5" tabindex="-1" aria-labelledby="productModalLabel5" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="productModalLabel5">Thông tin sản phẩm</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                            
+                                <div class="modal-body">                                        
+                                    <!-- Nhiều hình ảnh sản phẩm dạng lưới -->
+                                    <div class="product-images-grid mb-4">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="img/product5.jpg" class="img-fluid mb-3" alt="Hình 1">
+                                            </div>                                                                                     
+                                        </div>
+                                    </div>
+
+                                    <!-- Mô tả sản phẩm -->
+                                    <div class="product-description" style="padding-left: 20px;">
+                                        
+                                        <h5 class="text-primary">ROYAL CANIN Poodle Adult</h5>
+                                        <h5 class="text-primary">200.000 VND</h5>
+                                        <h6 class="text-secondary">Mã sản phẩm: D05</h6>                                     
+                                    </div>
+                                    <ul style="padding-left: 40px;">
+                                        <p>Thức ăn cho chó trưởng thành ROYAL CANIN Poodle Adult giúp chăm sóc bộ lông mềm mượt và duy trì sức khỏe tốt cho giống chó Poodle.</p>
+                                                
+                                                <ul>
+                                                    <li>Hạt thức ăn ROYAL CANIN Poodle Adult chứa các thành phần giúp duy trì sức khỏe lông và da cho chó Poodle trưởng thành.</li>
+                                                    <li>Hỗ trợ hệ tiêu hóa và sức khỏe răng miệng với công thức chứa các dưỡng chất cần thiết.</li>
+                                                    <li>Thành phần cân bằng và phù hợp cho nhu cầu dinh dưỡng của chó Poodle.</li>
+                                                </ul>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                    <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <!-- Sản phẩm 6 -->
+                        <div class="col-md-4 pb-5 product-item cat">
+                            <div class="position-relative bg-light d-flex flex-column text-center">
+                                <img class="img-fluid mb-4" src="img/product6.jpg" alt="ROYAL CANIN Mother & Babycat">
+                                <h6 class="text-uppercase">ROYAL CANIN Mother & Babycat</h6>
+                                <h5 class="text-primary">250.000 VND</h5>
+                                <div class="btn-action d-flex justify-content-center">
+                                    <a class="btn btn-primary py-2 px-3" href="#"><i class="bi bi-cart"></i></a>
+                                    <a class="btn btn-primary py-2 px-3" href="#" data-bs-toggle="modal" data-bs-target="#productModal6">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                     <!-- Modal for product details -->
+                    <div class="modal fade" id="productModal6" tabindex="-1" aria-labelledby="productModalLabel6" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="productModalLabel6">Thông tin sản phẩm</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                            
+                                <div class="modal-body">                                        
+                                    <!-- Nhiều hình ảnh sản phẩm dạng lưới -->
+                                    <div class="product-images-grid mb-4">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="img/product6.jpg" class="img-fluid mb-3" alt="Hình 1">
+                                            </div> 
+                                            <div class="col-4">
+                                                <img src="img/product6-1.jpg" class="img-fluid mb-3" alt="Hình 2">
+                                            </div>
+                                            <div class="col-4">
+                                                <img src="img/product6-2.jpg" class="img-fluid mb-3" alt="Hình 3">
+                                            </div>                                            
+                                        </div>
+                                    </div>
+
+                                    <!-- Mô tả sản phẩm -->
+                                    <div class="product-description" style="padding-left: 20px;">
+                                        
+                                        <h5 class="text-primary">ROYAL CANIN Mother & Babycat</h5>
+                                        <h5 class="text-primary">250.000 VND</h5>
+                                        <h6 class="text-secondary">Mã sản phẩm: C01</h6>                                    
+                                    </div>
+                                    <ul style="padding-left: 40px;">
+                                        <p>Thức ăn cho mèo con và mèo mẹ ROYAL CANIN Mother & Babycat dành cho mèo con đang cai sữa (1 – 4 tháng), mèo mẹ đang mang thai và cho con bú. Từ lúc sinh ra đến khi mèo được 4 tháng, nhu cầu năng lượng của chúng rất cao. Tuy nhiên khi mèo được 1-2 tháng, khi bắt đầu cai sữa, hệ miễn dịch của chúng sẽ rất yếu. Trong giai đoạn này mèo cần được chăm sóc đặc biệt do hệ tiêu hóa và miễn dịch chưa phát triển toàn diện.</p>
+                                    <ul>
+                                        <li>Thành phần bao gồm protein từ lòng trắng trứng, chất chống oxy hóa giúp nâng cao sức khỏe.</li>
+                                        <li>Tăng sức đề kháng cho mèo, giúp cơ thể mèo phát triển đầy đủ trong giai đoạn đầu đời.</li>
+                                        <li>Men tiêu hóa, Probiotic hỗ trợ tiêu hóa cho mèo, giúp cân bằng lợi khuẩn trong đường ruột, chất xơ hòa tan, chất làm ngọt tự nhiên, duy trì cân bằng hệ vi sinh đường ruột của mèo.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                    <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Sản phẩm 7 -->
+                <div class="carousel-item">
+                    <div class="row">                              
+                        <div class="col-md-4 pb-5 product-item cat">
+                            <div class="position-relative bg-light d-flex flex-column text-center">
+                                <img class="img-fluid mb-4" src="img/product7.jpg" alt="ROYAL CANIN Hairball Care">
+                                <h6 class="text-uppercase">ROYAL CANIN Hairball Care</h6>
+                                <h5 class="text-primary">135.000 VND</h5>
+                                <div class="btn-action d-flex justify-content-center">
+                                    <a class="btn btn-primary py-2 px-3" href="#"><i class="bi bi-cart"></i></a>
+                                    <a class="btn btn-primary py-2 px-3" href="#" data-bs-toggle="modal" data-bs-target="#productModal7">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                
+                         <!-- Modal for product details -->
+                    <div class="modal fade" id="productModal7" tabindex="-1" aria-labelledby="productModalLabel7" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="productModalLabel7">Thông tin sản phẩm</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                            
+                                <div class="modal-body">                                        
+                                    <!-- Nhiều hình ảnh sản phẩm dạng lưới -->
+                                    <div class="product-images-grid mb-4">
+                                        <div class="row">
+                                           
+                                            <div class="col-4">
+                                                <img src="img/product7.jpg" class="img-fluid mb-3" alt="Hình 1">
+                                            </div>
+                                            <div class="col-4">
+                                                <img src="img/product7-1.jpg" class="img-fluid mb-3" alt="Hình 2">
+                                            </div>                               
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="product-description" style="padding-left: 20px;">
+                                        
+                                        <h5 class="text-primary">ROYAL CANIN Hairball Care</h5>
+                                        <h5 class="text-primary">135.000 VND</h5>
+                                        <h6 class="text-secondary">Mã sản phẩm: C02</h6>                                     
+                                    </div>
+                                    <ul style="padding-left: 40px;">
+                                        <p>Thức ăn cho mèo tiêu hóa búi lông ROYAL CANIN Hairball Care dành cho mèo từ 12 tháng tuổi trở lên. Sản phẩm giúp đặc trị cho mèo dễ bị tắc lông, viêm búi lông. Kiểm soát búi lông cho mèo giúp bổ sung chất xơ tự nhiên, giúp bài tiết búi lông qua đường tiêu hóa cho mèo. Trị bệnh búi lông cho mèo. Hạt mã đề hỗ trợ tiêu hóa cho mèo, phòng các bệnh về đường tiêu hóa.</p>
+                                        <ul>
+                                            <li>ROYAL CANIN Hairball Care dạng viên hình tam giác hoàn toàn phù hợp với nhu cầu dinh dưỡng của mèo.</li>
+                                            <li>Giảm sự hình thành mảng bám, giúp răng chắc khỏe. Kích thước hạt phù hợp cấu tạo khoang miệng của mèo.</li>
+                                            <li>Thông qua việc ma sát với răng giúp mèo tự làm sạch răng miệng.</li>
+                                        </ul>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                    <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                
+                
+                        <!-- Sản phẩm 8 -->                                          
+                        <div class="col-md-4 pb-5 product-item cat">
+                            <div class="position-relative bg-light d-flex flex-column text-center">
+                                <img class="img-fluid mb-4" src="img/product8.jpg" alt="ROYAL CANIN British Shorthair Adult">
+                                <h6 class="text-uppercase">ROYAL CANIN British Shorthair Adult</h6>
+                                <h5 class="text-primary">140.000 VND</h5>
+                                <div class="btn-action d-flex justify-content-center">
+                                    <a class="btn btn-primary py-2 px-3" href="#"><i class="bi bi-cart"></i></a>
+                                    <a class="btn btn-primary py-2 px-3" href="#" data-bs-toggle="modal" data-bs-target="#productModal8">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal for product details -->
+                     <div class="modal fade" id="productModal8" tabindex="-1" aria-labelledby="productModalLabel8" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="productModalLabel8">Thông tin sản phẩm</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                            
+                                <div class="modal-body">                                        
+                                    <!-- Nhiều hình ảnh sản phẩm dạng lưới -->
+                                    <div class="product-images-grid mb-4">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="img/product8.jpg" class="img-fluid mb-3" alt="Hình 1">
+                                            </div> 
+                                            <div class="col-4">
+                                                <img src="img/product8-1.jpg" class="img-fluid mb-3" alt="Hình 2">
+                                            </div>
+                                                                                     
+                                        </div>
+                                    </div>
+
+                                    <!-- Mô tả sản phẩm -->
+                                    <div class="product-description" style="padding-left: 20px;">
+                                        
+                                        <h5 class="text-primary">PROYAL CANIN British Shorthair Adult</h5>
+                                        <h5 class="text-primary">140.000 VND</h5>
+                                        <h6 class="text-secondary">Mã sản phẩm: C03</h6>                                    
+                                    </div>
+                                    <ul style="padding-left: 40px;">
+                                        <p>Thức ăn cho mèo Anh lông ngắn trưởng thành ROYAL CANIN British Shorthair Adult dành cho những chú mèo ALN trên 12 tháng tuổi. Sản phẩm được chế biến theo công thức dành riêng cho mèo Anh lông ngắn. Đảm bảo cung cấp đầy đủ dinh dưỡng cho mèo cần thiết.</p>
+
+                                        <ul>
+                                            <li>ROYAL CANIN British Shorthair Adult có hình dáng hạt “nửa hình cung” được chế biến đặc biệt chuyên dành cho mèo Anh.</li>
+                                            <li>Thành phần hạt giảm sự hình thành mảng bám, giúp răng chắc khỏe.</li>
+                                            <li>Kích thước hạt phù hợp cấu tạo khoang miệng của mèo, thông qua việc ma sát với răng giúp mèo tự làm sạch răng miệng.</li>
+                                        </ul>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                    <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <!-- Sản phẩm 9 -->                                          
+                        <div class="col-md-4 pb-5 product-item cat">
+                            <div class="position-relative bg-light d-flex flex-column text-center">
+                                <img class="img-fluid mb-4" src="img/product9.jpg" alt="CATIDEA Fairy Chef Adult Nutrition">
+                                <h6 class="text-uppercase">CATIDEA Fairy Chef Adult Nutrition</h6>
+                                <h5 class="text-primary">280.000 VND</h5>
+                                <div class="btn-action d-flex justify-content-center">
+                                    <a class="btn btn-primary py-2 px-3" href="#"><i class="bi bi-cart"></i></a>
+                                    <a class="btn btn-primary py-2 px-3" href="#" data-bs-toggle="modal" data-bs-target="#productModal9">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal for product details -->
+                        <div class="modal fade" id="productModal9" tabindex="-1" aria-labelledby="productModalLabel9" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="productModalLabel9">Thông tin sản phẩm</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                
+                                    <div class="modal-body">                                        
+                                        <!-- Nhiều hình ảnh sản phẩm dạng lưới -->
+                                        <div class="product-images-grid mb-4">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="img/product9.jpg" class="img-fluid mb-3" alt="Hình 1">
+                                                </div> 
+                                                                                        
+                                            </div>
+                                        </div>
+
+                                        <!-- Mô tả sản phẩm -->
+                                        <div class="product-description" style="padding-left: 20px;">
+                                            
+                                            <h5 class="text-primary">CATIDEA Fairy Chef Adult Nutrition</h5>
+                                            <h5 class="text-primary">280.000 VND</h5>
+                                            <h6 class="text-secondary">Mã sản phẩm: C04</h6>                                    
+                                        </div>
+                                        <ul style="padding-left: 40px;">
+                                            <p>Thức ăn cho mèo trưởng thành CATIDEA Fairy Chef Adult Nutrition dành cho tất cả các giống mèo từ 1 đến 7 tuổi. Sản phẩm với chế độ ăn uống dinh dưỡng dựa trên đặc điểm tuổi tác, lối sống và sức khỏe của mèo trưởng thành. Mang tới cho mèo cưng của bạn một cuộc sống khỏe mạnh và hạnh phúc.</p>
+                                        <ul>
+                                            <li>Các thành phần thịt phù hợp với chế độ ăn uống tự nhiên của mèo.</li>
+                                            <li>Sự kết hợp dinh dưỡng chính xác và cân bằng giúp mèo trưởng thành duy trì sức khỏe tốt.</li>
+                                            <li>Các Axit béo Omega – 3 (EPA và DHA) giúp làn da khỏe mạnh và bộ lông sáng bóng, mềm mượt. Đặc biệt không bị xơ rối và giảm tỷ lệ gãy rụng hiệu quả.</li>
+                                            <li>Protein chất lượng cao, với chiết xuất Yucca được bổ sung giúp giảm khối lượng phân và hạn chế mùi tối đa.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                        <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <!-- Sản phẩm 10 --> 
+                        <div class="carousel-item">
+                            <div class="row"> 
+                                <div class="col-md-4 pb-5 product-item accessory">
+                                    <div class="position-relative bg-light d-flex flex-column text-center">
+                                        <img class="img-fluid mb-4" src="img/product10.jpg" alt="AUPET BP27 Pet Kennel">
+                                        <h6 class="text-uppercase">AUPET BP27 Pet Kennel</h6>
+                                        <h5 class="text-primary">600.000 VND</h5>
+                                        <div class="btn-action d-flex justify-content-center">
+                                            <a class="btn btn-primary py-2 px-3" href="#"><i class="bi bi-cart"></i></a>
+                                            <a class="btn btn-primary py-2 px-3" href="#" data-bs-toggle="modal" data-bs-target="#productModal10">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Modal for product details -->
+                                <div class="modal fade" id="productModal10" tabindex="-1" aria-labelledby="productModalLabel10" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="productModalLabel10">Thông tin sản phẩm</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        
+                                            <div class="modal-body">                                        
+                                                <!-- Nhiều hình ảnh sản phẩm dạng lưới -->
+                                                <div class="product-images-grid mb-4">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="img/product10-1.jpg" class="img-fluid mb-3" alt="Hình 1">
+                                                        </div> 
+                                                        <div class="col-4">
+                                                            <img src="img/product10-2.jpg" class="img-fluid mb-3" alt="Hình 2">
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <img src="img/product10-3.jpg" class="img-fluid mb-3" alt="Hình 3">
+                                                        </div>                                            
+                                                    </div>
+                                                </div>
+
+                                                <!-- Mô tả sản phẩm -->
+                                                <div class="product-description" style="padding-left: 20px;">
+                                                    
+                                                    <h5 class="text-primary">AUPET BP27 Pet Kennel</h5>
+                                                    <h5 class="text-primary">600.000 VND</h5>
+                                                    <h6 class="text-secondary">Mã sản phẩm: A01</h6>                                    
+                                                </div>
+                                                <ul style="padding-left: 40px;">
+                                                    
+                                                    <p>Lồng vận chuyển chó mèo AUPET BP27 Kennel với tiêu chuẩn an toàn quốc tế, phù hợp với các yêu cầu của hàng không trong quy định về vận chuyển vật nuôi. Sản phẩm được giải thưởng thương hiệu công nghiệp vật nuôi đáng tin cậy năm 2010 tại Đức. Lồng vận chuyển hàng không cho chó mèo sử dụng nguyên liệu nhựa PP ABS không mùi nhập khẩu có khả năng chịu được trọng lượng lớn, người trưởng thành đứng lên trên lồng cũng không có vấn đề gì.</p>
+                                                    <ul>
+                                                        <li>Sản phẩm lồng vận chuyển chó mèo dễ dàng tháo lắp, sạch sẽ dễ chịu, dễ rửa sạch, tiêu độc.</li>
+                                                        <li>Sản phẩm với thiết kế thích hợp, đường nét tinh tế, kết cấu cân xứng.</li>
+                                                        <li>Sản phẩm hai bên trái phải đều có lỗ thông gió, để thú cưng trong chuyến bay đường dài không cảm thấy khó thở mệt mỏi.</li>
+                                                        <li>Sản phẩm có kiểu lưới ngăn cửa thép không gỉ an toàn cho thú cưng.</li>
+                                                        <li>Tất cả các hãng hàng không trên thế giới đều chấp nhận cho phép sử dụng sản phẩm này.</li>
+                                                    </ul>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                                <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <!-- Sản phẩm 11 -->                         
+                                <div class="col-md-4 pb-5 product-item accessory">
+                                    <div class="position-relative bg-light d-flex flex-column text-center">
+                                        <img class="img-fluid mb-4" src="img/product11.jpg" alt="Đồ chơi dây thừng cho chó mèo BOBO hình gấu">
+                                        <h6 class="text-uppercase">Đồ chơi dây thừng cho chó mèo BOBO hình gấu</h6>
+                                        <h5 class="text-primary">150.000 VND</h5>
+                                        <div class="btn-action d-flex justify-content-center">
+                                            <a class="btn btn-primary py-2 px-3" href="#"><i class="bi bi-cart"></i></a>
+                                            <a class="btn btn-primary py-2 px-3" href="#" data-bs-toggle="modal" data-bs-target="#productModal11">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Modal for product details -->
+                                <div class="modal fade" id="productModal11" tabindex="-1" aria-labelledby="productModalLabel11" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="productModalLabel11">Thông tin sản phẩm</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        
+                                            <div class="modal-body">                                        
+                                                <!-- Nhiều hình ảnh sản phẩm dạng lưới -->
+                                                <div class="product-images-grid mb-4">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="img/product11.jpg" class="img-fluid mb-3" alt="Hình 1">
+                                                        </div> 
+                                                                                                   
+                                                    </div>
+                                                </div>
+
+                                                <!-- Mô tả sản phẩm -->
+                                                <div class="product-description" style="padding-left: 20px;">
+                                                    
+                                                    <h5 class="text-primary">Đồ chơi dây thừng cho chó mèo BOBO hình gấu</h5>
+                                                    <h5 class="text-primary">150.000 VND</h5>
+                                                    <h6 class="text-secondary">Mã sản phẩm: A02</h6>                                    
+                                                </div>
+                                                <ul style="padding-left: 40px;">
+                                                    
+                                                    <p>Đồ chơi dây thừng cho chó mèo BOBO hình gấu là sản phẩm dành cho tất cả giống chó.</p>
+                                                <ul>
+                                                    <li>Đồ chơi dây thừng cho chó mèo BOBO hình gấu có tác dụng làm sạch răng cho chó, tăng cường chức năng của hàm và giúp răng khỏe mạnh hơn.</li>
+                                                    <li>Sản phẩm giúp hạn chế nhu cầu gặm phá đồ đạc của thú cưng trong gia đình.</li>
+                                                    <li>Màu sắc như thật sẽ khiến cho cún cưng không cảm thấy cô đơn khi ở nhà một mình.</li>
+                                                    
+                                                </ul>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                                <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Sản phẩm 12 -->                         
+                                <div class="col-md-4 pb-5 product-item accessory">
+                                    <div class="position-relative bg-light d-flex flex-column text-center">
+                                        <img class="img-fluid mb-4" src="img/product12.jpg" alt="BOBO Melamine Inox Bowl 3057">
+                                        <h6 class="text-uppercase">BOBO Melamine Inox Bowl 3057</h6>
+                                        <h5 class="text-primary">175.000 VND</h5>
+                                        <div class="btn-action d-flex justify-content-center">
+                                            <a class="btn btn-primary py-2 px-3" href="#"><i class="bi bi-cart"></i></a>
+                                            <a class="btn btn-primary py-2 px-3" href="#" data-bs-toggle="modal" data-bs-target="#productModal12">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                               <!-- Modal for product details -->
+                               <div class="modal fade" id="productModal12" tabindex="-1" aria-labelledby="productModalLabel12" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productModalLabel12">Thông tin sản phẩm</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                    
+                                        <div class="modal-body">                                        
+                                            <!-- Nhiều hình ảnh sản phẩm dạng lưới -->
+                                            <div class="product-images-grid mb-4">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <img src="img/product12.jpg" class="img-fluid mb-3" alt="Hình 1">
+                                                    </div> 
+                                                                                            
+                                                </div>
+                                            </div>
+
+                                            <!-- Mô tả sản phẩm -->
+                                            <div class="product-description" style="padding-left: 20px;">
+                                                
+                                                <h5 class="text-primary">BOBO Melamine Inox Bowl 3057</h5>
+                                                <h5 class="text-primary">175.000 VND</h5>
+                                                <h6 class="text-secondary">Mã sản phẩm: A03</h6>                                    
+                                            </div>
+                                            <ul style="padding-left: 40px;">
+                                                
+                                                <p>Lồng vận chuyển chó mèo AUPET BP27 Kennel với tiêu chuẩn an toàn quốc tế, phù hợp với các yêu cầu của hàng không trong quy định về vận chuyển vật nuôi. Sản phẩm được giải thưởng thương hiệu công nghiệp vật nuôi đáng tin cậy năm 2010 tại Đức. Lồng vận chuyển hàng không cho chó mèo sử dụng nguyên liệu nhựa PP ABS không mùi nhập khẩu có khả năng chịu được trọng lượng lớn, người trưởng thành đứng lên trên lồng cũng không có vấn đề gì.</p>
+                                                <ul>
+                                                    <li>Sản phẩm lồng vận chuyển chó mèo dễ dàng tháo lắp, sạch sẽ dễ chịu, dễ rửa sạch, tiêu độc.</li>
+                                                    <li>Sản phẩm với thiết kế thích hợp, đường nét tinh tế, kết cấu cân xứng.</li>
+                                                    <li>Sản phẩm hai bên trái phải đều có lỗ thông gió, để thú cưng trong chuyến bay đường dài không cảm thấy khó thở mệt mỏi.</li>
+                                                    <li>Sản phẩm có kiểu lưới ngăn cửa thép không gỉ an toàn cho thú cưng.</li>
+                                                    <li>Tất cả các hãng hàng không trên thế giới đều chấp nhận cho phép sử dụng sản phẩm này.</li>
+                                                </ul>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                            <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                <!-- Sản phẩm 13 -->  
+                        <div class="carousel-item">
+                            <div class="row">                        
+                                <div class="col-md-4 pb-5 product-item health">
+                                    <div class="position-relative bg-light d-flex flex-column text-center">
+                                        <img class="img-fluid mb-4" src="img/product13.jpg" alt="BAYER Drontal Plus Flavour">
+                                        <h6 class="text-uppercase"> BAYER Drontal Plus Flavour</h6>
+                                        <h5 class="text-primary">55.000 VND</h5>
+                                        <div class="btn-action d-flex justify-content-center">
+                                            <a class="btn btn-primary py-2 px-3" href="#"><i class="bi bi-cart"></i></a>
+                                            <a class="btn btn-primary py-2 px-3" href="#" data-bs-toggle="modal" data-bs-target="#productModal13">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Modal for product details -->
+                                <div class="modal fade" id="productModal13" tabindex="-1" aria-labelledby="productModalLabel13" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="productModalLabel13">Thông tin sản phẩm</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        
+                                            <div class="modal-body">                                        
+                                                <!-- Nhiều hình ảnh sản phẩm dạng lưới -->
+                                                <div class="product-images-grid mb-4">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="img/product13.jpg" class="img-fluid mb-3" alt="Hình 1">
+                                                        </div> 
+                                                        <div class="col-4">
+                                                            <img src="img/product13-1.jpg" class="img-fluid mb-3" alt="Hình 2">
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <img src="img/product13-2.jpg" class="img-fluid mb-3" alt="Hình 3">
+                                                        </div>                                            
+                                                    </div>
+                                                </div>
+
+                                                <!-- Mô tả sản phẩm -->
+                                                <div class="product-description" style="padding-left: 20px;">
+                                                    
+                                                    <h5 class="text-primary">BAYER Drontal Plus Flavour</h5>
+                                                    <h5 class="text-primary">55.000 VND</h5>
+                                                    <h6 class="text-secondary">Mã sản phẩm: H01</h6>                                    
+                                                </div>
+                                                <ul style="padding-left: 40px;">
+                                                    
+                                                    <p>Thuốc tẩy giun cho chó BAYER Drontal Plus Flavour For Dogs điều trị đa nhiễm giun tròn, giun đũa, giun tóc, giun móc và sán dây. Giúp tẩy xổ tất cả những loài giun trưởng thành và ấu trùng nguy hiểm trên chó gây co cơ, liệt cơ làm giun không bám được vào vật chủ, còn Febantel cản trở giun sử dụng năng lượng cho các hoạt động làm giun chết nhanh. Giải quyết những vấn đề gây rối loạn tiêu hóa, bỏ ăn, có hiện tượng mệt mỏi do giun quấy phá.</p>
+                                                    <ul>
+                                                        <li>Uống trực tiếp hoặc dùng cùng thức ăn, không cần nghiền, không cần chế độ đặc biệt cho chó con và chó trưởng thành.</li>
+                                                        <li>Nên cho tẩy giun vào bữa sáng.</li>
+                                                        <li>Nếu cún nhỏ hơn có thể chia viên thuốc theo cân nặng.</li>
+                                                        <li>Liều dùng trung bình: 1 viên/10kg thể trọng.</li>
+                                                        
+                                                    </ul>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                                <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sản phẩm 14 -->                         
+                                <div class="col-md-4 pb-5 product-item health">
+                                    <div class="position-relative bg-light d-flex flex-column text-center">
+                                        <img class="img-fluid mb-4" src="img/product14.jpg" alt=" Thuốc trị ve rận NEXGARD cho chó từ 2 – 4kg">
+                                        <h6 class="text-uppercase">Thuốc trị ve rận NEXGARD cho chó từ 2 – 4kg</h6>
+                                        <h5 class="text-primary">165.000 VND</h5>
+                                        <div class="btn-action d-flex justify-content-center">
+                                            <a class="btn btn-primary py-2 px-3" href="#"><i class="bi bi-cart"></i></a>
+                                            <a class="btn btn-primary py-2 px-3" href="#" data-bs-toggle="modal" data-bs-target="#productModal14">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Modal for product details -->
+                                <div class="modal fade" id="productModal14" tabindex="-1" aria-labelledby="productModalLabel14" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="productModalLabel14">Thông tin sản phẩm</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        
+                                            <div class="modal-body">                                        
+                                                <!-- Nhiều hình ảnh sản phẩm dạng lưới -->
+                                                <div class="product-images-grid mb-4">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="img/product14.jpg" class="img-fluid mb-3" alt="Hình 1">
+                                                        </div> 
+                                                                                                  
+                                                    </div>
+                                                </div>
+
+                                                <!-- Mô tả sản phẩm -->
+                                                <div class="product-description" style="padding-left: 20px;">
+                                                    
+                                                    <h5 class="text-primary">Thuốc trị ve rận NEXGARD cho chó từ 2 – 4kg</h5>
+                                                    <h5 class="text-primary">165.000 VND</h5>
+                                                    <h6 class="text-secondary">Mã sản phẩm: H02</h6>                                    
+                                                </div>
+                                                <ul style="padding-left: 40px;">
+                                                    
+                                                    <p>Thuốc trị ve rận NEXGARD Chewable Tablets áp dụng với tất cả các giống chó có trọng lượng từ 2 – 4kg. Sử dụng 01 lần / tháng theo khuyến nghị từ nhà sản xuất sẽ đem lại hiệu quả tốt nhất.</p>
+                                                <ul>
+                                                    <li>Thuốc trị ve rận cho chó NEXTGARD có tác dụng bảo vệ thú cưng khỏi ve rận, bọ chét.</li>
+                                                    <li>Làm giảm khả năng nhiễm khuẩn khi loại bỏ bọ chét.</li>
+                                                    <li>Ngoài ra, nó có thể được dùng cùng với thuốc trị giun tim cho chó của bạn mà không bị gián đoạn.</li>
+                                                    
+                                                </ul>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                                <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sản phẩm 15 -->                         
+                                <div class="col-md-4 pb-5 product-item health">
+                                    <div class="position-relative bg-light d-flex flex-column text-center">
+                                        <img class="img-fluid mb-4" src="img/product15.jpg" alt=" BIOLINE Ear Care">
+                                        <h6 class="text-uppercase">BIOLINE Ear Care</h6>
+                                        <h5 class="text-primary">150.000 VND</h5>
+                                        <div class="btn-action d-flex justify-content-center">
+                                            <a class="btn btn-primary py-2 px-3" href="#"><i class="bi bi-cart"></i></a>
+                                            <a class="btn btn-primary py-2 px-3" href="#" data-bs-toggle="modal" data-bs-target="#productModal15">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                               
+                                <!-- Modal for product details -->
+                                <div class="modal fade" id="productModal15" tabindex="-1" aria-labelledby="productModalLabel15" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="productModalLabel15">Thông tin sản phẩm</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        
+                                            <div class="modal-body">                                        
+                                                <!-- Nhiều hình ảnh sản phẩm dạng lưới -->
+                                                <div class="product-images-grid mb-4">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="img/product15.jpg" class="img-fluid mb-3" alt="Hình 1">
+                                                        </div> 
+                                                                                                
+                                                    </div>
+                                                </div>
+
+                                                <!-- Mô tả sản phẩm -->
+                                                <div class="product-description" style="padding-left: 20px;">
+                                                    
+                                                    <h5 class="text-primary">BIOLINE Ear Care</h5>
+                                                    <h5 class="text-primary">150.000 VND</h5>
+                                                    <h6 class="text-secondary">Mã sản phẩm: H03</h6>                                    
+                                                </div>
+                                                <ul style="padding-left: 40px;">
+                                                    
+                                                    <p>Thuốc nhỏ tai cho chó mèo BIOLINE Ear Care với ống nhỏ đặc biệt dễ sử dụng, sản phẩm này lý tưởng cho việc làm sạch và chăm sóc tai cho thú cưng. Sử dụng cho chó, mèo và các loài động vật nhỏ khác như thỏ, chuột, nhím…</p>
+                                                    <ul>
+                                                        <li>Sản phẩm nhẹ nhàng làm sạch tai của thú cưng, tăng cường quá trình tự làm sạch và khử mùi hôi hiệu quả.</li>
+                                                        <li>Nếu tai của thú cưng bị bẩn hoặc có chất bã nhờn tích tụ, nhỏ vài giọt của thuốc nhỏ tai cho chó mèo BIOLINE Ear Care vào trong tai.</li>
+                                                        <li>Giữ tai yên của vật nuôi trong vài giây, sau đó thổi nhẹ vào tai cho chúng lắc đầu để đẩy chất bẩn trong tai ra bên ngoài.</li>
+
+                                                    </ul>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                                <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sản phẩm 16 -->  
+                        <div class="carousel-item">
+                            <div class="row">                        
+                                <div class="col-md-4 pb-5 product-item health">
+                                    <div class="position-relative bg-light d-flex flex-column text-center">
+                                        <img class="img-fluid mb-4" src="img/product16.jpg" alt="VEGEBRAND Fruit Vitamin">
+                                        <h6 class="text-uppercase">VEGEBRAND Fruit Vitamin</h6>
+                                        <h5 class="text-primary">170.000 VND</h5>
+                                        <div class="btn-action d-flex justify-content-center">
+                                            <a class="btn btn-primary py-2 px-3" href="#"><i class="bi bi-cart"></i></a>
+                                            <a class="btn btn-primary py-2 px-3" href="#" data-bs-toggle="modal" data-bs-target="#productModal16">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Modal for product details -->
+                                <div class="modal fade" id="productModal16" tabindex="-1" aria-labelledby="productModalLabel16" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="productModalLabel16">Thông tin sản phẩm</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        
+                                            <div class="modal-body">                                        
+                                                <!-- Nhiều hình ảnh sản phẩm dạng lưới -->
+                                                <div class="product-images-grid mb-4">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="img/product16-1.jpg" class="img-fluid mb-3" alt="Hình 1">
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <img src="img/product16-2.jpg" class="img-fluid mb-3" alt="Hình 2">
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <img src="img/product16-3.jpg" class="img-fluid mb-3" alt="Hình 3">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Mô tả sản phẩm -->
+                                                <div class="product-description" style="padding-left: 20px;">
+                                                    
+                                                    <h5 class="text-primary">VEGEBRAND Fruit Vitamin</h5>
+                                                    <h5 class="text-primary">165.000 VND</h5>
+                                                    <p>Thuốc bổ sung Vitamin tổng hợp cho chó VEGEBRAND Fruit Vitamin phù hợp với mọi giống chó ở các giai đoạn phát triển.</p>
+                                                    
+                                                </div>
+                                                <ul style="padding-left: 40px;">
+                                                    <li>VEGEBRAND Fruit Vitamin giúp kích thích tiêu hóa, loại bỏ chứng đầy hơi và chán ăn ở chó</li>
+                                                    <li>Sản phẩm có khả năng cân bằng sự trao đổi chất, tăng cường hệ miễn dịch.</li>
+                                                    <li>Ngăn ngừa cúm, thúc đẩy vết thương mau lành và giúp làm lông sáng bóng và đẹp hơn.</li>
+                                                    <li>Ngoài những tính năng kể trên, sản phẩm còn giúp mũi của chó đen và bóng hơn, ngăn chặn nguy cơ Pica ở chó. </li>
+                                                    <li>Mỗi 100g trong Thuốc bổ sung Vitamin tổng hợp cho chó VEGEBRAND Fruit Vitamin có chứa các thành phần: Vitamin A 0,06mg, Vitamin D 1500IU, Vitamin E 150IU, Vitamin B-12 0,7mcg, Phốt pho 110mg, Cysteine 18.75mg, Threonine 18.75mg, Calcium 165mg.</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                                <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Sản phẩm 17 -->  
+                                <div class="col-md-4 pb-5 product-item health">
+                                    <div class="position-relative bg-light d-flex flex-column text-center">
+                                        <img class="img-fluid mb-4" src="img/product17.jpg" alt="ALKIN Ophklen">
+                                        <h6 class="text-uppercase">ALKIN Ophklen</h6>
+                                        <h5 class="text-primary">155.000 VND</h5>
+                                        <div class="btn-action d-flex justify-content-center">
+                                            <a class="btn btn-primary py-2 px-3" href="#"><i class="bi bi-cart"></i></a>
+                                            <a class="btn btn-primary py-2 px-3" href="#" data-bs-toggle="modal" data-bs-target="#productModal17">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Modal for product details -->
+                                <div class="modal fade" id="productModal17" tabindex="-1" aria-labelledby="productModalLabel17" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="productModalLabel17">Thông tin sản phẩm</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        
+                                            <div class="modal-body">                                        
+                                                <!-- Nhiều hình ảnh sản phẩm dạng lưới -->
+                                                <div class="product-images-grid mb-4">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="img/product17.jpg" class="img-fluid mb-3" alt="Hình 1">
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+
+                                                <!-- Mô tả sản phẩm -->
+                                                <div class="product-description" style="padding-left: 20px;">
+                                                    
+                                                    <h5 class="text-primary">ALKIN Ophklen</h5>
+                                                    <h5 class="text-primary">155.000 VND</h5>
+                                                    <p>Thuốc nhỏ mắt cho chó mèo vệ sinh hàng ngày ALKIN Ophklen là một loại dung dịch nước trong suốt chuyên dùng để chăm sóc mắt của thú cưng. Thuốc có thể sử dụng cho chó mèo từ 4 tuần tuổi trở lên.</p>
+                                                    
+                                                </div>
+                                                <ul style="padding-left: 40px;">
+                                                    <li>Công thức đặc biệt giúp làm sạch và làm dịu mắt, giảm mệt mỏi và loại bỏ các triệu chứng đỏ mắt ở chó mèo.</li>
+                                                    <li>Thuốc còn có tác dụng bảo vệ mắt khỏi các tác động bên ngoài như sự cọ xát hoặc các vật thể lạ tác động.</li>
+                                                    <li>ALKIN Ophklen cũng chứa các thành phần giúp duy trì độ ẩm và giảm các triệu chứng khô mắt và mất nước.</li>
+                                                    <li>Ophthal Basic 0.3%, Synergistic ingradients 6.5%, Other ingredients 93.2%, Total 100.0%. </li>
+                                                    <li>Dùng thuốc nhỏ mắt cho chó mèo vệ sinh hàng ngày ALKIN Ophklen từ 5 đến 10 giọt vào bên ngoài của mắt, 2 lần mỗi ngày để luôn làm sạch và bảo vệ vùng nhạy cảm quanh mắt cho thú cưng.</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                                <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>                        
+
+                          
+                                    <!-- Carousel Controls -->
+                                    <div class="carousel-controls d-flex justify-content-center align-items-center mt-3">
+                                        <a class="carousel-control-prev" href="#productCarousel" role="button" data-bs-slide="prev" aria-label="Previous">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#productCarousel" role="button" data-bs-slide="next" aria-label="Next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+
+            <!-- Products End -->
+
+                      <!-- Offer Start -->
+                        <div class="container-fluid bg-offer my-5 py-5">
+                            <div class="container py-5">
+                                <div class="row gx-5 justify-content-start">
+                                    <div class="col-lg-7">
+                                        <div class="border-start border-5 border-dark ps-5 mb-5">
+                                            <h6 class="text-dark text-uppercase">Ưu Đãi Đặc Biệt</h6>
+                                            <h1 class="display-5 text-uppercase text-white mb-0">Tiết kiệm 50% cho tất cả các mặt hàng khi bạn đặt hàng lần đầu</h1>
+                                        </div>
+                                        <p class="text-white mb-4">Chào mừng bạn đến với Soliel, nơi thú cưng của bạn luôn được chăm sóc và yêu thương như thành viên trong gia đình...</p>
+                                        <a href="./product.html" class="btn btn-light py-md-3 px-md-5 me-3">Shop Now</a>
+                                        <a href="#" class="btn btn-outline-light py-md-3 px-md-5" data-bs-toggle="modal" data-bs-target="#readMoreModal">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+
+                        <!-- Modal for Read More -->
+                        <div class="modal fade" id="readMoreModal" tabindex="-1" aria-labelledby="readMoreModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="readMoreModalLabel">Thông tin chi tiết về ưu đãi</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Chúng tôi cung cấp nhiều loại sản phẩm và dịch vụ cho thú cưng của bạn, bao gồm:</p>
+                                        <ul>
+                                            <li>Thức ăn dinh dưỡng cho các giống mèo và chó.</li>
+                                            <li>Phụ kiện như đồ chơi, dây xích, và quần áo thú cưng.</li>
+                                            <li>Dịch vụ chăm sóc, bao gồm tắm, cắt tỉa lông và khám sức khỏe.</li>
+                                            <li>Đội ngũ nhân viên tận tâm sẵn sàng hỗ trợ và tư vấn cho bạn.</li>
+                                            <li>Chương trình khách hàng thân thiết với nhiều ưu đãi hấp dẫn.</li>
+                                        </ul>
+                                        <p>Hãy ghé thăm cửa hàng của chúng tôi để trải nghiệm dịch vụ tuyệt vời mà chúng tôi mang lại!</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+ <!-- Offer End -->
+
+
+    <!-- Pricing Plan Start 
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
+                <h6 class="text-primary text-uppercase">Pricing Plan</h6>
+                <h1 class="display-5 text-uppercase mb-0">Competitive Pricing For Pet Services</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="bg-light text-center pt-5 mt-lg-5">
+                        <h2 class="text-uppercase">Basic</h2>
+                        <h6 class="text-body mb-5">The Best Choice</h6>
+                        <div class="text-center bg-primary p-4 mb-2">
+                            <h1 class="display-4 text-white mb-0">
+                                <small class="align-top"
+                                    style="font-size: 22px; line-height: 45px;">$</small>49<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                    Mo</small>
+                            </h1>
+                        </div>
+                        <div class="text-center p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>HTML5 & CSS3</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Bootstrap v5</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Responsive Layout</span>
+                                <i class="bi bi-x fs-4 text-danger"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Browsers Compatibility</span>
+                                <i class="bi bi-x fs-4 text-danger"></i>
+                            </div>
+                            <a href="" class="btn btn-primary text-uppercase py-2 px-4 my-3">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light text-center pt-5">
+                        <h2 class="text-uppercase">Standard</h2>
+                        <h6 class="text-body mb-5">The Best Choice</h6>
+                        <div class="text-center bg-dark p-4 mb-2">
+                            <h1 class="display-4 text-white mb-0">
+                                <small class="align-top"
+                                    style="font-size: 22px; line-height: 45px;">$</small>99<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                    Mo</small>
+                            </h1>
+                        </div>
+                        <div class="text-center p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>HTML5 & CSS3</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Bootstrap v5</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Responsive Layout</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Browsers Compatibility</span>
+                                <i class="bi bi-x fs-4 text-danger"></i>
+                            </div>
+                            <a href="" class="btn btn-primary text-uppercase py-2 px-4 my-3">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light text-center pt-5 mt-lg-5">
+                        <h2 class="text-uppercase">Extended</h2>
+                        <h6 class="text-body mb-5">The Best Choice</h6>
+                        <div class="text-center bg-primary p-4 mb-2">
+                            <h1 class="display-4 text-white mb-0">
+                                <small class="align-top"
+                                    style="font-size: 22px; line-height: 45px;">$</small>149<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                    Mo</small>
+                            </h1>
+                        </div>
+                        <div class="text-center p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>HTML5 & CSS3</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Bootstrap v5</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Responsive Layout</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Browsers Compatibility</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <a href="" class="btn btn-primary text-uppercase py-2 px-4 my-3">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Pricing Plan End -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
+                <h6 class="text-primary text-uppercase">Thành viên</h6>
+                <h1 class="display-5 text-uppercase mb-0">Chuyên gia chăm sóc thú cưng có trình độ</h1>
+            </div>
+            <div class="owl-carousel team-carousel position-relative" style="padding-right: 25px;">
+                <div class="team-item">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="img/team1.jpg" alt="">
+                        <div class="team-overlay">
+                            <div class="d-flex align-items-center justify-content-start">
+                                <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-twitter"></i></a>
+                                <a class="btn btn-light btn-square mx-1" href="https://web.facebook.com/?_rdc=1&_rdr5"><i class="bi bi-facebook"></i></a>
+                                <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-light text-center p-4">
+                        <h5 class="text-uppercase">Thanh Trúc</h5>                       
+                    </div>
+                </div>
+                <div class="team-item">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
+                        <div class="team-overlay">
+                            <div class="d-flex align-items-center justify-content-start">
+                                <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-twitter"></i></a>
+                                <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-facebook"></i></a>
+                                <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-light text-center p-4">
+                        <h5 class="text-uppercase">Full Name</h5>
+                        <p class="m-0">Designation</p>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
+                        <div class="team-overlay">
+                            <div class="d-flex align-items-center justify-content-start">
+                                <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-twitter"></i></a>
+                                <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-facebook"></i></a>
+                                <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-light text-center p-4">
+                        <h5 class="text-uppercase">Full Name</h5>
+                        <p class="m-0">Designation</p>
+                    </div>
+                </div>                
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid bg-testimonial py-5" style="margin: 45px 0;">
+        <div class="container py-5">
+            <div class="row justify-content-end">
+                <div class="col-lg-7">
+                    <div class="owl-carousel testimonial-carousel bg-white p-5">
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-4">
+                                <img class="img-fluid mx-auto" src="img/testimonial-1.jpg" alt="">
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
+                                    <i class="bi bi-chat-square-quote text-primary"></i>
+                                </div>
+                            </div>
+                            <p>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat. Erat dolor rebum sit ipsum.</p>
+                            <hr class="w-25 mx-auto">
+                            <h5 class="text-uppercase">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-4">
+                                <img class="img-fluid mx-auto" src="img/testimonial-2.jpg" alt="">
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
+                                    <i class="bi bi-chat-square-quote text-primary"></i>
+                                </div>
+                            </div>
+                            <p>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat. Erat dolor rebum sit ipsum.</p>
+                            <hr class="w-25 mx-auto">
+                            <h5 class="text-uppercase">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Blog Start 
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
+                <h6 class="text-primary text-uppercase">Latest Blog</h6>
+                <h1 class="display-5 text-uppercase mb-0">Latest Articles From Our Blog Post</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="blog-item">
+                        <div class="row g-0 bg-light overflow-hidden">
+                            <div class="col-12 col-sm-5 h-100">
+                                <img class="img-fluid h-100" src="img/blog-1.jpg" style="object-fit: cover;">
+                            </div>
+                            <div class="col-12 col-sm-7 h-100 d-flex flex-column justify-content-center">
+                                <div class="p-4">
+                                    <div class="d-flex mb-3">
+                                        <small class="me-3"><i class="bi bi-bookmarks me-2"></i>Web Design</small>
+                                        <small><i class="bi bi-calendar-date me-2"></i>01 Jan, 2045</small>
+                                    </div>
+                                    <h5 class="text-uppercase mb-3">Dolor sit magna rebum clita rebum dolor</h5>
+                                    <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor</p>
+                                    <a class="text-primary text-uppercase" href="">Read More<i class="bi bi-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="blog-item">
+                        <div class="row g-0 bg-light overflow-hidden">
+                            <div class="col-12 col-sm-5 h-100">
+                                <img class="img-fluid h-100" src="img/blog-2.jpg" style="object-fit: cover;">
+                            </div>
+                            <div class="col-12 col-sm-7 h-100 d-flex flex-column justify-content-center">
+                                <div class="p-4">
+                                    <div class="d-flex mb-3">
+                                        <small class="me-3"><i class="bi bi-bookmarks me-2"></i>Web Design</small>
+                                        <small><i class="bi bi-calendar-date me-2"></i>01 Jan, 2045</small>
+                                    </div>
+                                    <h5 class="text-uppercase mb-3">Dolor sit magna rebum clita rebum dolor</h5>
+                                    <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor</p>
+                                    <a class="text-primary text-uppercase" href="">Read More<i class="bi bi-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    Blog End -->
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light mt-5 py-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Liên hệ</h5>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>38 Mậu Thân, An Hòa, Ninh Kiều, Cần Thơ, Việt Nam</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>Soleilpet@gmail.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>0398 874 718</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Truy cập nhanh</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-body mb-2" href="D:\pet-shop-website-template-master\pet-shop-website-template-master\project\index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Trang chủ</a>
+                        <a class="text-body mb-2" href="D:\pet-shop-website-template-master\pet-shop-website-template-master\project\about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Giới thiệu</a>
+                        <a class="text-body mb-2" href="D:\pet-shop-website-template-master\pet-shop-website-template-master\project\service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Dịch vụ</a>
+                        
+                        <a class="text-body" href="D:\pet-shop-website-template-master\pet-shop-website-template-master\project\contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Liên hệ</a>
+                    </div>
+                </div>
+                   <!-- Footer Start 
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Popular Links</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                        <a class="text-body" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    </div>
+                </div>-->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Đăng Ký</h5>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control p-3" placeholder="Email">
+                            <button class="btn btn-primary">Đăng Ký</button>
+                        </div>
+                    </form>
+                    <h6 class="text-uppercase mt-4 mb-3">Theo Dõi Chúng Tôi</h6>
+                    <div class="d-flex">
+                        <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-twitter"></i></a>
+                        <a class="btn btn-outline-primary btn-square me-2" href="https://web.facebook.com/profile.php?id=100010434582467"><i class="bi bi-facebook"></i></a>
+                        <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-linkedin"></i></a>
+                        <a class="btn btn-outline-primary btn-square" href=""><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-12 text-center text-body">
+                    <a class="text-body" href="">Điều khoản & Điều kiện</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Chính sách Bảo mật</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Hỗ trợ Khách hàng</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Thanh toán</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Trợ giúp</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Câu hỏi Thường gặp</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="./js/index.js"></script> 
+    <script src="./js/main.js"></script> 
+
+
+
+</body>
+
+</html>
